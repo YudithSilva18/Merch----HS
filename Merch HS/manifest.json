@@ -1,0 +1,20 @@
+{
+
+    "theme_color": "orange",
+    "background_color": "orange",
+    "display": "standalone",
+    "scope": "/",
+    "start_url": "index.html",
+    "name": "Tienda - Harry Styles",
+    "short_name": "Merch Online",
+    "id": "index.html",
+    "description": "Merch Exclusivo",
+    "icons": [
+        {
+            "src": "./imagenes/Imagen1.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+       
+    ]
+}

@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Description">
+    <meta name="keywords" content="Keywords">
+    <link rel="stylesheet" href="estilo.css">
+    <link rel="manifest" href="manifest.json">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/feather-icons"></script>
+   
+
+    <link rel="stylesheet" href="estilo.css">
+    </link>
+    <!-- CSS only -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+
+    <title>Tienda Oficial - Harry Styles</title>
+</head>
+
+<body>
+    <header>
+        <div class="header-section container">
+            <h1><img src="https://fontmeme.com/permalink/211213/218014bdb22f882b103c084335547ea5.png"
+                    alt="fuente-happy-lucky" border:0></h1>
+                    <br>
+                    <br>
+
+            <div class= "container-center">
+                <form class="d-flex">
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <button class="btn btn-outline-success" type="submit"></button>
+                    <img onmouseover="showCart(this)" class="cart" src="./imagenes/carrito-compras.png" alt="">
+                    <p class="count-product"></p>
+                
+                <div class="cart-products" style="position: relative;" id="products-id">
+                    <p class="close-btn" onclick="closeBtn()">X</p>
+                    <h3>------Pedido------</h3>
+                    <div class="card-items">
+                       
+                    </div>
+                    <h2>Total:$ <strong class="price-total">0</strong></h2>
+                </div>       
+                </form>
+            </div></div>
+
+        </div>
+    </header>
+
+    <br>
+    <br>
+    <br>
+    <div id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0" class="active"
+                aria-current="true" aria-label="Slide 1"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                aria-label="Slide 2"></button>
+            <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="2"
+                aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+            <div class="carousel-item active">
+                <img src="./imagenes/Fondo 0.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./imagenes/Fondo 1.jpg" class="d-block w-100" alt="...">
+            </div>
+            <div class="carousel-item">
+                <img src="./imagenes/Fondo 2.gif" class="d-block w-100" alt="...">
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    
+    <section class="container">
+        <div class="products">
+            <div class="w3-card-4 w3-dark-grey" style="width:40%">
+                <div>
+                    <img src="./imagenes/products/14.png" alt="">
+                    <p>$<span>184</span></p>
+
+                </div>
+                <p class="title">Diseño Golden impreso en una camiseta unisex de color natural.</p>
+                <a href="" data-id="1" class="btn-add-cart">Añadir compra</a>
+            </div>
+            <div class="w3-card-4 w3-dark-grey" style="width:40%">
+                <div>
+                    <img src="./imagenes/products/13.png" alt="">
+                    <p>$<span>230</span></p>
+                </div>
+                <p class="title">Blusa Edición Limitada Unisex Personalizado</p>
+                <a href="" data-id="2" class="btn-add-cart">Añadir compra</a>
+            </div>
+            <div class="w3-card-4 w3-dark-grey" style="width:40%">
+                <div>
+                    <img src="./imagenes/products/31.png" alt="">
+                    <p>$<span>110</span></p>
+                </div>
+                <p class="title">Bolso tote de lona en color natural con Watermelon Sugar impreso en una cara.</p>
+                <a href="" data-id="3" class="btn-add-cart">Añadir compra</a>
+            </div>
+            <div class="w3-card-4 w3-dark-grey" style="width:40%">
+                <div>
+                    <img src="./imagenes/products/7.png" alt="">
+                    <p>$<span>220</span></p>
+                </div>
+                <p class="title">¡Exclusivo en línea! Este gorro negro ajustable tiene "Harry es mi amigo" bordado en un hilo de color menta. Confeccionado en 100% algodón.</p>
+                <a href="" data-id="4" class="btn-add-cart">Añadir compra</a>
+            </div>
+            <div class="w3-card-4 w3-dark-grey" style="width:40%">
+                <div>
+                    <img src="./imagenes/products/Harry2.jpg" alt="">
+                    <p>$<span>349</span></p>
+                </div>
+                <p class="title">Diseño de Name :Harry, impreso en una sudadera con capucha unisex.</p>
+                <a href="" data-id="5" class="btn-add-cart">Añadir compra</a>
+            </div>
+            <div class="w3-card-4 w3-dark-grey" style="width:40%">
+                <div>
+                    <img src="./imagenes/products/18.png" alt="">
+                    <p>$<span>445</span></p>
+                </div>
+                <p class="title">Diseño de TPWK impreso en una sudadera con capucha unisex.</p>
+                <a href="" data-id="6" class="btn-add-cart">Añadir compra</a>
+            </div>
+            <div class="w3-card-4 w3-dark-grey" style="width:38%">
+                <div>
+                    <img src="./imagenes/products/Botella.png" alt="">
+                    <p>$<span>134</span></p>
+                </div>
+                <p class="title">Botella de agua TPWK de 32 oz de la línea de productos Love on Tour.</p>
+                <a href="" data-id="7" class="btn-add-cart">Añadir compra</a>
+            </div>
+            <div class="w3-card-4 w3-dark-grey" style="width:38%">
+                <div>
+                    <img src="./imagenes/products/Bolsa.png" alt="">
+                    <p>$<span>158</span></p>
+                </div>
+                <p class="title">Bolso tote de lona en color natural con Love On Tour impreso en una cara.</p>
+                <a href="" data-id="8" class="btn-add-cart">Añadir compra</a>
+            </div>
+        </div>
+    </section>
+    <br>
+    <br>
+    
+    <div class="container-fluid">¡Gracias por su Preferencia!
+   
+    </div>
+
+
+    <script>
+        function showCart(x) {
+            document.getElementById("products-id").style.display = "block";
+        }
+        function closeBtn() {
+            document.getElementById("products-id").style.display = "none";
+        }
+
+    </script>
+    <div id="snackbar"><a id="launchUpdate">Pedido Listo</a></div>
+
+    <script src="main.js"></script>
+
+</body>
+
+</html>
